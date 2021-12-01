@@ -6,12 +6,6 @@
 (defn sum-three-from [ds i] 
     (sum (three-from ds i)))
 
-(defn add-padding [ds]
-    (array/concat ds @[0 0 0]))
-
-(defn window-sum-from-padded [ds i]
-    (sum-three-from (add-padding ds) i))
-
 (defn out-of-bounds? [ds i] 
     (> (+ i 3) (length ds)))
 
