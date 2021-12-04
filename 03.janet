@@ -1,4 +1,3 @@
-
 (defn ascii-to-digit   [number]      (match number 48 "0" 49 "1"))
 (defn digit-to-ascii   [number]      (match number "0" 48 "1" 49))
 (defn appearances      [char number] (count (fn [x] (= x char)) number))
